@@ -19,7 +19,7 @@ headers = {
 
 while True:
     '''
-    Scraping data such as phone title, price, link and short description from the shop1
+    Scraping data such as phone title, price, link and short description from the shop 1
     '''
     soup1 = BeautifulSoup(requests.get(shop1_url).text, 'html.parser')
     smartphones1 = soup1.find_all('li', {'class': 'catalog-grid__cell catalog-grid__cell_type_slim ng-star-inserted'})
@@ -42,7 +42,7 @@ while True:
 
 while True:
     '''
-    Scraping data such as phone title, price, link and short description from the shop2
+    Scraping data such as phone title, price, link and short description from the shop 2
     '''
     soup2 = BeautifulSoup((requests.get(shop2_url, headers=headers)).text, 'html.parser')
     smartphones2 = soup2.find_all('li', {'class': 'product-item'})
@@ -68,7 +68,7 @@ while True:
 
 while True:
     '''
-    Scraping data such as phone title, price, link and short description from the shop2
+    Scraping data such as phone title, price, link and short description from the shop 3
     '''
     soup3 = BeautifulSoup(requests.get(shop3_url).text, 'html.parser')
     smartphones3 = soup3.find_all('div', {'class': 'product-card'})
